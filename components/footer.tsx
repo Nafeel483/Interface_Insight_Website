@@ -1,24 +1,29 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t bg-dark text-white">
+    <footer className="w-full border-t hero-gradient text-white">
       <div className="container flex flex-col gap-8 py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2 mb-3">
               <div className="relative h-10 w-10">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-New-Transparent-u2Cg5IzsVc6NkyKY4Od95Ic2puJn6V.png"
-                  alt="Interface Insight Solutions Logo"
+                  src={require("../assets/icon_Logo.png")}
+                  alt="Interface Insight Icon Logo"
                   width={100}
                   height={100}
-                  className="object-contain"
+                // className="object-contain"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-gold">INTERFACE INSIGHT</h3>
+              <div className="mt-4">
+                <h3 className="text-md font-semibold text-gold">{"INTERFACE INSIGHT"}</h3>
+                <h3 className="text-md font-semibold text-gold">{"SOLUTIONS"}</h3>
+              </div>
             </div>
             <p className="text-sm text-silver">
               Transforming ideas into exceptional digital experiences with cutting-edge technology and pixel-perfect

@@ -34,26 +34,25 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
+      <div className="container flex h-28 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative h-12 w-12">
+            <div className="relative h-19 w-22">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoHD-h3F0ZnWtiybna7rRMOKdiHTJDeF0DD.png"
-                alt="Interface Insight Solutions Logo"
-                width={200}
-                height={200}
+                src={require("../assets/headerLogo.png")}
+                alt="Interface Insight Logo"
+                width={180}
+                height={180}
                 className="object-contain"
               />
             </div>
-            <motion.span
+            {/* <motion.span
               className="hidden md:inline-block text-xl font-bold text-green"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-            >
+              transition={{ duration: 0.5 }}>
               INTERFACE INSIGHT
-            </motion.span>
+            </motion.span> */}
           </Link>
         </div>
 
@@ -134,12 +133,11 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href="https://freelance-platform.example.com/interface-insight"
+                href="https://www.fiverr.com/s/YRjLrAR"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <Button size="sm" className="w-full bg-secondary text-dark hover:bg-secondary/90">
-                  Hire Us
+                  {`Hire Us`}
                 </Button>
               </Link>
             </div>

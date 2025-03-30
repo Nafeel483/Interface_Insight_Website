@@ -2,7 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Code, Smartphone, Palette } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import LogoPic from "@/assets/logo.png"; 
 
 export default function Home() {
   return (
@@ -11,20 +12,20 @@ export default function Home() {
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 hero-gradient text-white">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    INTERFACE INSIGHT SOLUTIONS
+                    {`INTERFACE INSIGHT SOLUTIONS`}
                   </h1>
-                  <p className="max-w-[600px] text-silver md:text-xl">
-                    Transforming ideas into exceptional digital experiences with cutting-edge technology and
-                    pixel-perfect design.
+                  <p className="max-w-[600px] pt-5 text-silver md:text-xl/8">
+                    {`Transforming ideas into exceptional digital experiences with cutting-edge technology and
+                    pixel-perfect design.`}
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-4 pt-8 min-[400px]:flex-row items-center">
                   <Link href="/portfolio">
-                    <Button className="inline-flex h-10 items-center justify-center rounded-md bg-secondary text-dark px-8 text-sm font-medium shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+                    <Button className="inline-flex h-12 items-center justify-center rounded-md bg-secondary text-dark px-8 text-sm font-medium shadow transition-colors hover:bg-secondary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                       View Our Work
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -32,22 +33,27 @@ export default function Home() {
                   <Link href="/services">
                     <Button
                       variant="outline"
-                      className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-8 text-sm font-medium shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                    >
+                      className="inline-flex h-12 items-center justify-center rounded-md border border-white bg-transparent px-8 text-sm font-medium shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                       Our Services
                     </Button>
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative h-[350px] w-[350px] sm:h-[400px] sm:w-[400px] lg:h-[450px] lg:w-[450px]">
-                  <Image
+                <div className="relative h-[370px] w-[370px] sm:h-[400px] sm:w-[400px] lg:h-[450px] lg:w-[450px]">
+                  {/* <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-New-Transparent-u2Cg5IzsVc6NkyKY4Od95Ic2puJn6V.png"
                     alt="Interface Insight Solutions Logo"
                     width={450}
                     height={450}
-                    className="object-contain"
-                  />
+                    className="object-contain"/> */}
+                  <Image
+                    src={LogoPic}
+                    alt="Interface Insight Solutions Logo"
+                    width={450}
+                    height={450}
+                    className="object-contain" />
+
                 </div>
               </div>
             </div>
@@ -59,10 +65,10 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+                <div className="inline-block rounded-lg bg-primary px-3 py-2 text-sm text-primary-foreground">
                   Our Services
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-dark">What We Offer</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-dark pt-2">What We Offer</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   We provide end-to-end solutions for your digital needs with expertise in the latest technologies.
                 </p>
@@ -84,7 +90,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Link href="/services#mobile">
-                    <Button variant="ghost" className="p-0 text-primary">
+                    <Button variant="ghost" className="p-0 text-primary px-3 py-2">
                       Learn more <ArrowRight className="ml-1 h-4 w-4" />
                     </Button>
                   </Link>
@@ -105,7 +111,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Link href="/services#web">
-                    <Button variant="ghost" className="p-0 text-primary">
+                    <Button variant="ghost" className="p-0 text-primary px-3 py-2">
                       Learn more <ArrowRight className="ml-1 h-4 w-4" />
                     </Button>
                   </Link>
@@ -126,7 +132,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                   <Link href="/services#design">
-                    <Button variant="ghost" className="p-0 text-primary">
+                    <Button variant="ghost" className="p-0 text-primary px-3 py-2">
                       Learn more <ArrowRight className="ml-1 h-4 w-4" />
                     </Button>
                   </Link>
@@ -144,7 +150,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-dark font-medium">
                   Our Work
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-dark">Featured Projects</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-dark pt-2">Featured Projects</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Take a look at some of our recent projects that showcase our expertise and creativity.
                 </p>
