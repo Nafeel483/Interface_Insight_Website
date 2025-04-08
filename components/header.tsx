@@ -88,10 +88,9 @@ export default function Header() {
             ))}
           </AnimatePresence>
           <Link
-            href="https://freelance-platform.example.com/interface-insight"
+            href="https://www.fiverr.com/m_ruman"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             <Button size="sm" className="bg-secondary text-dark hover:bg-secondary/90">
               Hire Us
             </Button>
@@ -133,7 +132,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href="https://www.fiverr.com/s/YRjLrAR"
+                href="https://www.fiverr.com/m_ruman"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Button size="sm" className="w-full bg-secondary text-dark hover:bg-secondary/90">

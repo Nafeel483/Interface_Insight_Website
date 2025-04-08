@@ -1,7 +1,7 @@
 "use client"
 
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
                   alt="Interface Insight Icon Logo"
                   width={100}
                   height={100}
-                // className="object-contain"
+                  className="object-contain"
                 />
               </div>
               <div className="mt-4">
@@ -79,14 +79,14 @@ export default function Footer() {
                 <Instagram className="h-5 w-5 text-silver hover:text-primary" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/muhammad-nafeel-rasheed-450a36148/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5 text-silver hover:text-primary" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
             </div>
             <div className="mt-4">
               <Link
-                href="https://freelance-platform.example.com/interface-insight"
+                href="https://www.fiverr.com/m_ruman"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-gold hover:underline"

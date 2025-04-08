@@ -1,9 +1,11 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Code, Smartphone, Palette } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import LogoPic from "@/assets/logo.png"; 
+import LogoPic from "@/assets/logo.png";
 
 export default function Home() {
   return (
@@ -159,7 +161,7 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:gap-12">
               <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  src={require("../assets/services/E-Commerce.png")}
                   alt="E-Commerce Mobile App"
                   width={600}
                   height={400}
@@ -172,7 +174,7 @@ export default function Home() {
               </div>
               <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  src={require("../assets/services/SaaS.jpg")}
                   alt="SaaS Dashboard"
                   width={600}
                   height={400}
@@ -196,27 +198,25 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-dark text-white">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-silver/40 text-hero-gradient">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gradient">
-                  Ready to Start Your Project?
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gradient mb-8">
+                  {`Ready to Start Your Project?`}
                 </h2>
-                <p className="mx-auto max-w-[700px] text-silver md:text-xl">
-                  Let's collaborate to bring your vision to life with our expertise in design and development.
+                <p className="mx-auto max-w-[700px] text-dark md:text-xl mb-8">
+                  {`Let's collaborate to bring your vision to life with our expertise in design and development.`}
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
-                  href="https://freelance-platform.example.com/interface-insight"
+                  href="https://www.fiverr.com/m_ruman"
                   target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  rel="noopener noreferrer">
                   <Button
                     variant="secondary"
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-gold text-dark px-8 text-sm font-medium shadow transition-colors hover:bg-gold/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                  >
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-gold text-dark px-8 text-sm font-medium shadow transition-colors hover:bg-gold/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                     Hire Us on Freelance Platform
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
