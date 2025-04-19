@@ -18,7 +18,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    {`INTERFACE INSIGHT SOLUTIONS`}
+                    {`VYNTARIX Solutions`}
                   </h1>
                   <p className="max-w-[600px] pt-5 text-silver md:text-xl/8">
                     {`Transforming ideas into exceptional digital experiences with cutting-edge technology and
@@ -45,13 +45,13 @@ export default function Home() {
                 <div className="relative h-[370px] w-[370px] sm:h-[400px] sm:w-[400px] lg:h-[450px] lg:w-[450px]">
                   {/* <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-New-Transparent-u2Cg5IzsVc6NkyKY4Od95Ic2puJn6V.png"
-                    alt="Interface Insight Solutions Logo"
+                    alt="VYNTARIX Solutions Logo"
                     width={450}
                     height={450}
                     className="object-contain"/> */}
                   <Image
                     src={LogoPic}
-                    alt="Interface Insight Solutions Logo"
+                    alt="VYNTARIX Solutions Logo"
                     width={450}
                     height={450}
                     className="object-contain" />

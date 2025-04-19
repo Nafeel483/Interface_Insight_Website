@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "About Us | Interface Insight Solutions",
+  title: "About Us | VYNTARIX Solutions",
   description:
-    "Learn about Interface Insight Solutions, our team, mission, and approach to web and mobile development.",
+    "Learn about VYNTARIX Solutions, our team, mission, and approach to web and mobile development.",
 }
 
 export default function AboutPage() {
@@ -32,7 +32,7 @@ export default function AboutPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Our Story</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-                  Interface Insight Solutions was founded in 2018 with a simple mission: to create digital products that users love and businesses value.
+                  VYNTARIX Solutions was founded in 2018 with a simple mission: to create digital products that users love and businesses value.
                 </p>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed dark:text-gray-400">
                   What started as a small team of three passionate developers has grown into a full-service digital agency with expertise across mobile and web development, UI/UX design, and frontend implementation.

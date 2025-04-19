@@ -40,9 +40,9 @@ export default function Header() {
             <div className="relative h-19 w-22">
               <Image
                 src={require("../assets/headerLogo.png")}
-                alt="Interface Insight Logo"
-                width={180}
-                height={180}
+                alt="VYNTARIX Logo"
+                width={150}
+                height={150}
                 className="object-contain"
               />
             </div>
@@ -51,7 +51,7 @@ export default function Header() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}>
-              INTERFACE INSIGHT
+              VYNTARIX
             </motion.span> */}
           </Link>
         </div>

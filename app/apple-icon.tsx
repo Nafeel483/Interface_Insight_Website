@@ -23,10 +23,9 @@ export default function Icon() {
         color: "white",
         fontSize: 120,
         fontWeight: "bold",
-        fontFamily: "sans-serif",
-      }}
-    >
-      I
+        fontFamily: "Helvetica",
+      }}>
+      V
     </div>,
     // ImageResponse options
     {

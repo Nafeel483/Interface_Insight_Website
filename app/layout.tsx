@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Interface Insight Solutions | Web & Mobile Development",
+  title: "VYNTARIX",
   description:
     "Professional web and mobile app development services specializing in React, React Native, and UI/UX design.",
     generator: 'v0.dev'

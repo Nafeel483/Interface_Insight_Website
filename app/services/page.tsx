@@ -5,7 +5,7 @@ import { ArrowRight, Code, Smartphone, Palette, Monitor, CheckCircle } from "luc
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Services | Interface Insight Solutions",
+  title: "Services | VYNTARIX Solutions",
   description:
     "Our comprehensive range of web and mobile development services including React, React Native, and UI/UX design.",
 }

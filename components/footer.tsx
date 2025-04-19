@@ -10,19 +10,18 @@ export default function Footer() {
       <div className="container flex flex-col gap-8 py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-0 mb-3">
               <div className="relative h-10 w-10">
                 <Image
                   src={require("../assets/icon_Logo.png")}
-                  alt="Interface Insight Icon Logo"
-                  width={100}
-                  height={100}
+                  alt="VYNTARIX Icon Logo"
+                  width={120}
+                  height={120}
                   className="object-contain"
                 />
               </div>
-              <div className="mt-4">
-                <h3 className="text-md font-semibold text-gold">{"INTERFACE INSIGHT"}</h3>
-                <h3 className="text-md font-semibold text-gold">{"SOLUTIONS"}</h3>
+              <div>
+                <h3 className="text-md font-semibold text-gold">{"VYNTARIX"}</h3>
               </div>
             </div>
             <p className="text-sm text-silver">
@@ -98,7 +97,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between border-t border-gray-700 pt-4">
           <p className="text-xs text-silver">
-            © {new Date().getFullYear()} Interface Insight Solutions. All rights reserved.
+            © {new Date().getFullYear()} VYNTARIX Solutions. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy" className="text-xs text-silver hover:text-primary">

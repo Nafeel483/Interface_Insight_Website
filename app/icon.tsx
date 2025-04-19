@@ -13,7 +13,7 @@ export default function Icon() {
     // ImageResponse JSX element
     <div
       style={{
-        fontSize: 26,
+        fontSize: 22,
         background: "#2C8039",
         width: "100%",
         height: "100%",
@@ -23,10 +23,9 @@ export default function Icon() {
         color: "white",
         borderRadius: "15%",
         fontWeight: "bolder",
-        fontFamily: "sans-serif",
-      }}
-    >
-      I
+        fontFamily: "Arial",
+      }}>
+      V
     </div>,
     // ImageResponse options
     {

@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Interface Insight Solutions",
-    short_name: "Interface Insight",
+    name: "VYNTARIX Solutions",
+    short_name: "VYNTARIX",
     description:
       "Professional web and mobile app development services specializing in React, React Native, and UI/UX design.",
     start_url: "/",
